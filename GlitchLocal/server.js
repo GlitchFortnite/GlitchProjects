@@ -6,22 +6,22 @@ const path = require("path");
 const app = express();
 const PORT = 4444;
 
-// Project directories
+
 const PUBLIC_FOLDER = path.join(__dirname, "public");
 const CONFIG_FILE = path.join(__dirname, "update.json");
 
-// Update archive
+
 const ARCHIVE_FILE = path.join(
     PUBLIC_FOLDER,
     "glitch_launcher.rar"
 );
 
-// Create public folder if it doesn't exist
+
 if (!fs.existsSync(PUBLIC_FOLDER)) {
     fs.mkdirSync(PUBLIC_FOLDER, { recursive: true });
 }
 
-// Version endpoint
+
 app.get("/version.txt", (req, res) => {
     try {
         const config = JSON.parse(
@@ -42,7 +42,7 @@ app.get("/version.txt", (req, res) => {
     }
 });
 
-// Launcher download endpoint
+
 app.get("/glitch_launcher.rar", (req, res) => {
     if (!fs.existsSync(ARCHIVE_FILE)) {
         return res.status(404).send(
@@ -70,7 +70,7 @@ app.get("/glitch_launcher.rar", (req, res) => {
     );
 });
 
-// Start server
+
 app.listen(PORT, "127.0.0.1", () => {
     console.log("-----------------------------------");
     console.log("     GLITCH LAUNCHER UPDATE SERVER");
