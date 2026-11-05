@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>GlitchApplicationImage.ico</ApplicationIcon>
+    <Company>Glitch</Company>
+    <Authors>Glitch</Authors>
+    <Version>1.0.2</Version>
+    <Description>Glitch OG Fortnite Downloader Created By Twisted0097</Description>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <Copyright>GlitchFN</Copyright>
+    <PackageIcon>project_url_img.png</PackageIcon>
+    <Product>GlitchDownloader</Product>
+    <PackageId>GlitchDownloader</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="GlitchApplicationImage.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\project_url_img.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>
