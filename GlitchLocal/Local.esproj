@@ -1,0 +1,20 @@
+
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.74-alpha">
+
+  <PropertyGroup>
+    <ProjectGuid>{A81D52B7-7C42-4B90-9D16-44B9D5A8C321}</ProjectGuid>
+    <StartupFile>server.js</StartupFile>
+    <StartupCommand>node server.js</StartupCommand>
+    <WorkingDirectory>$(MSBuildProjectDirectory)</WorkingDirectory>
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <ShouldRunTestScript>false</ShouldRunTestScript>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="server.js" />
+    <Content Include="update.json" />
+    <Content Include="package.json" />
+    <Content Include="package-lock.json" />
+  </ItemGroup>
+
+</Project>
