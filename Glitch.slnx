@@ -1,4 +1,8 @@
 <Solution>
   <Project Path="GlitchDownloader/GlitchDownloader.csproj" />
   <Project Path="GlitchUpdater/GlitchUpdater.csproj" Id="082a2836-a246-42e7-ae0e-1ec002f45e31" />
+  <Project Path="GlitchLocal/Local.esproj">
+    <Build />
+    <Deploy />
+  </Project>
 </Solution>
